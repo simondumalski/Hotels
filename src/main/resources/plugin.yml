@@ -1,0 +1,26 @@
+name: Hotels
+version: '${project.version}'
+main: me.simondumalski.hotels.Core
+api-version: 1.16
+depend: [ WorldEdit, Vault ]
+authors: [ Saymoan ]
+description: '${project.description}'
+commands:
+  hotels:
+    description: Main command for managing hotel bookings
+    aliases: [ h ]
+  hotelsadmin:
+    description: Admin command for managing other player's hotel bookings
+    aliases: [ hadmin ]
+permissions:
+  hotels.rent:
+    description: Allows you to use commands for hotels and to rent a hotel for 14 days
+    default: false
+    children:
+      hotels.level2: true
+  hotels.level2:
+    description: Allows you to rent a hotel for 28 days
+    default: false
+  hotels.admin:
+    description: Allows you to use admin hotel commands
+    default: op

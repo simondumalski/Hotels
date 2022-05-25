@@ -1,0 +1,34 @@
+hotels:
+  price-per-day: 250
+  expiry-alert-interval: 900
+
+messages:
+  plugin:
+    prefix: '&8[&fCyber&3Hotels&8]&r'
+    header: '&8---------[ &fHotels &8(&3v%version%&8) ]---------'
+    footer: '&8---------------------------------'
+  errors:
+    unknown-command: '%prefix% &cUnknown command!'
+    insufficient-permissions: '%prefix% &cYou do not have permission to use this command!'
+    incorrect-usage: '%prefix% &cIncorrect usage: &e%args0%'
+    invalid-player: '%prefix% &cSpecified player doesn''t exist or doesn''t have a hotel!'
+    insufficient-funds: '%prefix% &cInsufficient funds! Need &a$%args0%&c.'
+    invalid-period: '%prefix% &cInvalid rental period!'
+    too-long: '%prefix% &cRental period too long! Max rental time: &a%args0%&c.'
+    not-renting: '%prefix% &cYou are not renting a hotel!'
+    already-renting: '%prefix% &cYou are already renting a hotel!'
+  events:
+    block-break: '%prefix% &cYou can''t break that here!'
+    block-place: '%prefix% &cYou can''t place that here!'
+    player-interact: '%prefix% &cYou can''t interact with that here!'
+    player-join: '%prefix% &7You have &e%args0% &7left in your hotel booking.'
+    rent-expiry-alert: '%prefix% &cYOU HAVE &e%args0% &cRENT TIME LEFT! BE SURE TO COLLECT YOUR ITEMS OR RENEW YOUR BOOKING!'
+  commands:
+    help: '&3%command% &8- &f%description%'
+    home: '%prefix% &7Teleported you to your hotel! Rent runs out in &e%args0%&7.'
+    info: '&3Time Remaining: &e%args0%'
+    rent: '%prefix% &7Rented hotel for &e%args0% days&7! Use &e/hotel &7to get to it.'
+    renew: '%prefix% &7Renewed hotel for &e%args0% days&7! Use &e/hotel &7to get to it.'
+  admin:
+    help: '&3%command% &8- &f%description%'
+    home: '%prefix% &7Teleported you to &e%args0%''s &7hotel!'
